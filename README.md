@@ -16,7 +16,7 @@ StrawCI is a project that allows the automation of the deployment of application
 At this stage the developer or developers create a project and develop it to such an extent that they want to deploy it, then to facilitate it they install StrawCI in their project.
 
 ### 📁 Upload
-After the previous stage, this code is sent through a commit to a Git repository, then a server configured with StrawCI downloads that commit automatically.
+After the previous stage, this code is sent through a commit to a Git repository, then a server configured with StrawCI pull the repository automatically.
 
 ### ⚙️ Compile
 StrawCI prepares all the necessary things before deployment, these actions are previously defined by the developer. That is, if it is necessary to install libraries, update modules or compile the project, then StrawCI does it.
