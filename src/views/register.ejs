@@ -1,0 +1,23 @@
+<%- include("../components/_head"); -%>
+
+<div class="welcome">
+    <h2 class="title">Sign up</h2>
+    <form class="auth-form" method="post" action="/register">
+        <% if (locals.error != null) { %>
+            <div class="form-status form-error"><b>Error:</b> <%- locals.error -%></div>
+        <%}%>
+
+        <% if (locals.success != null) { %>
+            <div class="form-status form-success"><b>Success:</b> <%- locals.success -%></div>
+        <%}%>
+
+        <input class="input" name="firstname" type="text" placeholder="First Name" minlength="2" required maxlength="32" />
+        <input class="input" name="lastname" type="text" placeholder="Last Name" minlength="2" required maxlength="32" />
+        <input class="input" name="username" type="text" placeholder="Username" minlength="4" required maxlength="32" />
+        <input class="input"name="email" type="email" placeholder="Email" required />
+        <input class="input"name="password" type="password" placeholder="Password" minlength="8" maxlength="256" required />
+        <button class="btn btn-primary" type="submit">Sign up</button>
+    </form>
+</div>
+
+<%- include("../components/_foot"); -%>

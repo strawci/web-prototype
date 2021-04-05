@@ -1,0 +1,20 @@
+<%- include("../components/_head"); -%>
+
+<div class="welcome">
+    <h2 class="title">Sign in</h2>
+    <form class="auth-form" method="post" action="/login">
+        <% if (locals.error != null) { %>
+            <div class="form-status form-error"><b>Error:</b> <%- locals.error -%></div>
+        <%}%>
+
+        <% if (locals.success != null) { %>
+            <div class="form-status form-success"><b>Success:</b> <%- locals.success -%></div>
+        <%}%>
+
+        <input class="input"name="email" type="email" placeholder="Email" required />
+        <input class="input"name="password" type="password" placeholder="Password" minlength="8" maxlength="256" required />
+        <button class="btn btn-primary" type="submit">Sign in</button>
+    </form>
+</div>
+
+<%- include("../components/_foot"); -%>

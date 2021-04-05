@@ -1,0 +1,12 @@
+<%- include("../components/_head"); -%>
+
+<div class="organizations">
+    <h2 class="title">Delete Project</h2>
+    <form class="org-form" method="post">
+        <p>Are you sure you want to delete project <%- locals.project.name -%> by <%- locals.org.name -%>? This action can not be undone.</p>
+        <a class="btn btn-primary" href="/org/<%- locals.org._id -%>/project/<%- locals.project._id -%>">Back</a>
+        <button class="btn btn-danger" type="submit">Delete</button>
+    </form>
+</div>
+
+<%- include("../components/_foot"); -%>

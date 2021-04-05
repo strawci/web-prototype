@@ -1,0 +1,138 @@
+/* Home */
+.integrations {
+    display: inline-block;
+}
+
+.integration-icon {
+    width: 52px;
+    margin: 7px;
+}
+
+.not-yet {
+    filter: grayscale(1)
+}
+
+.freetier {
+    text-align: center;
+    max-width: 620px;
+    margin: auto;
+    padding-top: 10%;
+}
+
+.benefits {
+    display: inline-flex;
+    align-items: center;
+}
+
+.benefit {
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.benefit-count, .benefit-title {
+    display: block;
+    text-align: center;
+}
+
+.benefit-count {
+    color: #3e29ff;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.benefit-title {
+    color: #222;
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+/* Dashboard */
+.organizations {
+    padding-bottom: 30px;
+}
+
+.organization {
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 6px 8px 0 rgba(0, 0, 0, .19);
+    border-radius: 20px;
+    width: 200px;
+    height: 250px;
+    padding: 30px;
+    display: inline-block;
+}
+
+.org-title {
+    text-align: center;
+    color: #333;
+    font-size: 19px;
+    width: 100%;
+    display: block;
+}
+
+.org-icon {
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding-top: 40px;
+}
+
+/* Org Dashboard */
+.org-hero {
+    width: 90%;
+    height: 200px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 6px 8px 0 rgba(0, 0, 0, .19);
+    border-radius: 10px;
+    padding: 0 50px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.org-logo > img {
+    width: 100px;
+}
+
+.org-info {
+    display: block;
+}
+
+.org-info-item {
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.org-info-item  > span,
+.org-info-item > b {
+    display: block;
+}
+
+.org-member {
+    width: 40px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.org-actions {
+    margin-left: auto;
+}
+
+.org-actions > .btn {
+    text-align: center;
+    display: block;
+    margin: 5px 0;
+    width: 100px;
+}
+
+/* Project */
+.project-cards {
+    margin-top: 60px;
+}
+
+.project-card {
+    display: inline-block;
+    margin-right: 20px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 6px 8px 0 rgba(0, 0, 0, .19);
+    border-radius: 10px;
+}

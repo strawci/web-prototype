@@ -1,0 +1,65 @@
+.container {
+    width: 70%;
+    margin: 2% auto;
+}
+
+.title {
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.welcome {
+    text-align: center;
+    max-width: 620px;
+    margin: auto;
+}
+
+/* Forms */
+.auth-form {
+    margin: auto;
+    max-width: 320px;
+}
+
+.org-form {
+    max-width: 320px;
+}
+
+.input {
+    width: calc(100% - 40px);
+    height: 40px;
+    display: block;
+    margin: 10px 0;
+    padding: 4px 20px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #3e29ff;
+}
+
+.input-invisible {
+    border: none;
+}
+
+.input:focus {
+    outline: none;
+    border-bottom: 1px solid #3e29ff;
+}
+
+.form-status {
+    width: 97%;
+    border-radius: 20px;
+    padding: 3%;
+    color: white;
+    margin: 5px;
+}
+
+.form-error {
+    background-color: rgb(255, 83, 83);
+}
+
+.form-success {
+    background-color: rgb(43, 255, 131);
+}

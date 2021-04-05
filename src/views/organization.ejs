@@ -1,0 +1,60 @@
+<%- include("../components/_head"); -%>
+
+<div class="org-dashboard">
+    <div class="org-hero">
+        <div class="org-logo">
+            <img src="/assets/img/nginx.png" />
+        </div>
+
+        <div class="org-summary">
+            <div class="org-info">
+                <div class="org-info-item">
+                    <b>Organization Name</b>
+                    <span><%- locals.org.name -%></span>
+                </div>
+
+                <div class="org-info-item">
+                    <b>Organization Owner</b>
+                    <span><%- locals.org.owner.username -%></span>
+                </div>
+            </div>
+
+            <div class="org-info">
+                <div class="org-info-item">
+                    <b>Members (<%- locals.org.members.length -%>/10)</b>
+                    <div class="org-members">
+                        <img src="/assets/img/java.png" class="org-member" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="org-actions">
+            <a href="/org/<%- locals.org._id -%>/delete" class="btn btn-danger">Delete</a>
+            <a href="/org/<%- locals.org._id -%>/edit" class="btn btn-warning">Modify</a>
+        </div>
+    </div>
+</div>
+
+<div class="projects">
+    <h2 class="title">Projects (<%- locals.projects.length -%>/5)</h2>
+    <div class="project-list">
+        <% for (const project of locals.projects ) { %>
+            <a href="/org/<%- locals.org._id -%>/project/<%- project._id -%>">
+                <div class="organization"> 
+                    <b class="org-title"><%- project.name -%></b>
+                    <img src="/assets/img/python.png" class="org-icon" alt="<%- project.name -%> project icon" />
+                </div>
+            </a>
+        <%}%>
+
+        <a href="/org/<%- locals.org._id -%>/new">
+            <div class="organization"> 
+                <b class="org-title">Create Project</b>
+                <img src="/assets/img/plus.png" class="org-icon" alt="Create project icon" />
+            </div>
+        </a>
+    </div>
+</div>
+
+<%- include("../components/_foot"); -%>

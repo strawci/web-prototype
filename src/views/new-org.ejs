@@ -1,0 +1,19 @@
+<%- include("../components/_head"); -%>
+
+<div class="organizations">
+    <h2 class="title">Create Organization</h2>
+    <form class="org-form" method="post" action="/dashboard/new">
+        <% if (locals.error != null) { %>
+            <div class="form-status form-error"><b>Error:</b> <%- locals.error -%></div>
+        <%}%>
+
+        <% if (locals.success != null) { %>
+            <div class="form-status form-success"><b>Success:</b> <%- locals.success -%></div>
+        <%}%>
+
+        <input class="input" name="name" type="text" placeholder="Organization name" required />
+        <button class="btn btn-primary" type="submit">Create</button>
+    </form>
+</div>
+
+<%- include("../components/_foot"); -%>

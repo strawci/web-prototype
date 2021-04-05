@@ -1,0 +1,59 @@
+<%- include("../components/_head"); -%>
+
+<div class="org-dashboard">
+    <div class="org-hero">
+        <div class="org-logo">
+            <img src="/assets/img/nginx.png" />
+        </div>
+
+        <div class="org-summary">
+            <div class="org-info">
+                <div class="org-info-item">
+                    <b>Project Name</b>
+                    <span><%- locals.project.name -%></span>
+                </div>
+
+                <div class="org-info-item">
+                    <b>Organization</b>
+                    <span><%- locals.org.name -%></span>
+                </div>
+
+                <div class="org-info-item">
+                    <b>Status</b>
+                    <span><%- locals.project.active == true ? "Active" : "Stopped" -%></span>
+                </div>
+            </div>
+
+            <!--<div class="org-info">
+                <div class="org-info-item">
+                    <b>Actions</b>
+                    <div class="org-members">
+                        <button class="btn btn-link">Force Deploy</button>
+                        <button class="btn btn-link">Pause</button>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+
+        <div class="org-actions">
+            <a href="/org/<%- locals.org._id -%>/project/<%- locals.project._id -%>/delete" class="btn btn-danger">Delete</a>
+            <a href="/org/<%- locals.org._id -%>/project/<%- locals.project._id -%>/edit" class="btn btn-warning">Modify</a>
+        </div>
+    </div>
+</div>
+
+<div class="project-cards">
+    <div class="project-card">
+        <h3>Source Key</h3>
+        <input class="input input-invisible" type="password" value="<%- locals.project.sourcekey -%>" id="source-key"/>
+        <button onclick="toggleShowInput('#source-key')" class="btn btn-danger">Show</button>
+    </div>
+
+    <div class="project-card">
+        <h3>Deploy Key</h3>
+        <input class="input input-invisible" type="password" value="<%- locals.project.deploykey -%>" id="deploy-key"/>
+        <button onclick="toggleShowInput('#deploy-key')" class="btn btn-danger">Show</button>
+    </div>
+</div>
+
+<%- include("../components/_foot"); -%>

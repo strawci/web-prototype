@@ -1,0 +1,40 @@
+<%- include("../components/_head"); -%>
+
+<div class="organizations">
+    <h2 class="title">Organizations you manage (<%- locals.ownOrgs.length -%>/3)</h2>
+    <div class="project-list">
+        <div class="project-item">
+            <% for (const org of locals.ownOrgs) { %>
+                <a href="/org/<%- org._id -%>">
+                    <div class="organization"> 
+                        <b class="org-title"><%- org.name -%></b>
+                        <img class="org-icon"/>
+                    </div>
+                </a>
+            <%}%>
+
+            <a href="/dashboard/new">
+                <div class="organization"> 
+                    <b class="org-title">Create Organization</b>
+                    <img src="/assets/img/plus.png" class="org-icon" alt="Create organization icon" />
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="organizations">
+    <h2 class="title">Organizations where you are a member (<%- locals.ownOrgs.length -%>/10)</h2>
+    <div class="project-list">
+        <div class="project-item">
+            <% for (const org of locals.ownOrgs) { %>
+                <div class="organization"> 
+                    <b><%- org.name -%></b>
+                    <p><%- org.description -%></p>
+                </div>
+            <%}%>
+        </div>
+    </div>
+</div>
+
+<%- include("../components/_foot"); -%>
