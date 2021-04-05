@@ -33,4 +33,4 @@ This project was created to expedite the development of another project called <
 Of course, you can also make a donation and send your support by following the "sponsor" links. This would help a lot to maintain the project.
 
 ## ❤️ The End
-Made with Love by <a href="https://twitter.com/sammwy">Sammwy</a>
+Made with Love by [Sammwy](https://twitter.com/sammwy)
