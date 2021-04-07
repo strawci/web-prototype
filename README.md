@@ -1,6 +1,6 @@
 <div align="center">
   <h1>StrawCI</h1>
-  <b>Warning</b>
+  <b>Warning:</b>
   <p>This is just a web prototype (both Frontend and Backend) built in Express and Mongoose (MongoDB)<br/>This prototype is not practical, sustainable or safe at all.<p>
 </div>
 
